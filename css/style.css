@@ -1,0 +1,1394 @@
+/***Created with love***/
+
+/*structure as follows
+
+ 1. @font-faces
+ 2. all fonts and uppercase stuff
+ 3. some general stuff like colors, widths, floatings, etc.
+ 4. Header, Menu, Main Content
+ 5. Gallery: green and orange parts
+ 6. Launching part and Footer
+ 7. Media stuff
+
+
+ */
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(../fonts/ProximaNovaRegular.woff)
+}
+
+
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/avenir-next-regular.woff)
+}
+
+@font-face {
+    font-family: ProximaNovaSemiBold;
+    src: url(../fonts/ProximaNovaCond-Semibold.woff)
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSansRegular.woff)
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url(../fonts/MontserratRegular.woff)
+}
+
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.woff);
+}
+
+                   /*FONTS*/
+
+.info-block h3, .you-can, .fitness-stuff h1, .fitness-stuff p, .fitness-stuff a, .active-users, .love-stuff h1, .love-stuff p, .love-stuff a, .products-used, .tracking-info h1, .tracking-info p, .summer-info, .get-involved h1, .get-involved p, .improve-habits h1, .improve-habits p, .launching-stuff, footer {
+    font-family: OpenSans;
+}
+
+.fitness-stuff h3, .love-stuff h3, .sea-stuff, .tracking-info h3, .get-involved h3, .improve-habits h3 {
+    font-family: MontserratRegular;
+}
+
+
+                    /*UPPERCASE*/
+
+
+nav a, .fitness-in, .fitness-stuff h3, .fitness-stuff h1, .love-stuff h3, .love-stuff h1, .tracking-info h3, .tracking-info h1, .summer-info h1, .get-involved h3, .get-involved h1, .improve-habits h1 , .improve-habits h3 {
+    text-transform: uppercase;
+}
+
+
+                    /*Font-size*/
+
+.sea-stuff, .get-involved p, .fitness-stuff p, .fitness-stuff a, .love-stuff p, .love-stuff a, .tracking-info p, .fitness-stuff h3, .love-stuff h3, .tracking-info h3, .get-involved h3,
+.improve-habits p, footer p {
+    font-size: 14px;
+}
+
+
+                    /*COLOURS*/
+
+nav a, .fitness-in, .info-block, .info-block a, .users-number, .products-used, .products-number, .sea-stuff, .summer-info, .improve-habits, .launching-stuff, footer h3, button {
+    color: #FFFFFF;
+}
+
+.green_slash, .fitness-stuff a, .fitness-stuff h1, .love-stuff h1, .love-stuff a, .tracking-info h1, .get-involved h1, .love-stuff a, .fitness-stuff a {
+    color: #A2CA28;
+
+}
+
+.fitness-stuff h1, .fitness-stuff p, .love-stuff h1, .love-stuff p, .tracking-info p, .get-involved p {
+    color: #737B80;
+}
+
+.green-part, .summer-fun, .improve-habits, button {
+    background-color: #A2CA28;
+}
+
+
+.love-your-body, .fitness-first, .love-your-body, .track-lifestyle, .get-involved  {
+    background-color: #fff;
+}
+
+                    /* width*/
+
+.summer-fun, .sea-and-boy {
+    width: 779px;
+}
+
+                    /*line-height*/
+
+.fitness-stuff p, .love-stuff p, .tracking-info p, .summer-info p, .get-involved p, .improve-habits p, .launching-stuff p, footer p {
+    line-height: 25px;
+}
+
+
+                    /*DISPLAYS*/
+
+.fitness-first, .love-your-body, .logo_fitness, .hand-watch, .happy-runners,.track-lifestyle, .grape, .get-involved  {
+    /*display: inline-block;*/
+}
+
+
+                    /*all the floatings*/
+
+nav, .lifestyle-icon, .strawberry, .habits-icon, .slim-model, .love-your-body, .sea-and-boy, .summer-fun, .mango {
+    float: right;
+}
+
+
+nav a, .fitness-in {
+    font-family: Avenir;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+                   /*Header stuff is here*/
+
+header {
+    background-image: url(../pics/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 952px;
+}
+
+.logo_fitness {
+    padding: 39px 0 0 60px;
+    display: inline-block;
+}
+
+.slogan {
+    padding: 689px 0 0 114px;
+}
+
+.fitness-in {
+    line-height: 55px;
+    font-size: 39px;
+}
+
+.you-can {
+    margin-left: 187px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.orange_slash {
+    color: #FD634E;
+}
+
+                       /*Menu is here*/
+
+nav {
+    padding: 74px 103px 0 0;
+}
+
+nav a, .info-block a {
+    text-decoration: none;
+}
+
+nav a {
+    margin-right: 88px;
+    font-size: 13px;
+}
+
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #A2CA28;
+}
+                         /*Main content is here*/
+
+.info-block {
+    padding-top: 111px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.info-block a {
+    font-family: ProximaNovaRegular;
+}
+
+.info-block h3 {
+    font-size: 24.04px;
+    margin-top: 23px;
+    margin-bottom: 32px;
+}
+
+.info-block p {
+    font-family: ProximaNovaRegular;
+    font-size: 13.99px;
+    line-height: 20px;
+}
+
+.container {
+    width: 1156px;
+    margin: 0 auto;
+}
+
+.training-funding {
+    margin: 0 43px 0 43px;
+}
+
+.connect {
+    margin-right: 43px;
+}
+
+.resources p, .connect p {
+    margin-bottom: 31px;
+}
+
+.training-funding p {
+    margin-bottom: 51px;
+}
+
+.communicate p {
+    margin-bottom: 50px;
+}
+
+
+                            /*Gallery is here*/
+
+.gallery-one {
+    padding-top: 120px;
+}
+
+/*Green Part*/
+
+.fitness-first {
+    float: left;
+}
+
+.fitness-stuff {
+    padding-top: 55px;
+    padding-bottom: 78px;
+}
+
+.fitness-first, .love-your-body {
+    width: 375px;
+    text-align: center;
+}
+
+.fitness-stuff p, .love-stuff p, .tracking-info p {
+    margin-bottom: 16px;
+}
+
+.fitness-stuff h3, .love-stuff h3, .tracking-info h3, .get-involved h3 {
+    color: #FD634E;
+    margin-bottom: 14px;
+}
+
+.fitness-stuff h1, .love-stuff h1, .tracking-info h1, .get-involved h1, .improve-habits h1 {
+    font-size: 35px;
+}
+
+.fitness-stuff a, .love-stuff a {
+    font-weight: bold;
+}
+
+.love-stuff {
+    padding-top: 55px;
+    padding-bottom: 77px;
+}
+
+
+.drop {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.slim-model {
+    background-image: url(../pics/fitness-first.jpg);
+    background-repeat: no-repeat;
+    width: 781px;
+    height: 396px;
+    position: relative;
+
+}
+
+.active-users, .products-used {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.active-users {
+    color: #F7614C;
+}
+
+.model-info, .watch-info {
+    position: absolute;
+    bottom: 51px;
+}
+
+.model-info {
+    right: 39px;
+}
+
+.red-drop {
+    position: relative;
+    bottom: -7px;
+}
+
+.watch-body-part {
+    height: 394px;
+}
+
+.hand-watch {
+    background-image: url(../pics/watch.jpg);
+    background-repeat: no-repeat;
+    width: 779px;
+    height: 394px;
+    position: relative;
+    float: left;
+}
+
+.watch-info {
+    left: 47px;
+}
+
+
+.love-your-body {
+    width: 377px;
+}
+
+/*orange-part is here*/
+
+.orange-part {
+    background-color: #FD634E;
+    margin-top: -2px;
+}
+
+.runners-sea {
+    height: 329px;
+}
+
+.happy-runners {
+    background-image: url(../pics/lifestyle-runing.jpg);
+    background-repeat: no-repeat;
+    height: 329px;
+    width: 377px;
+    float: left;
+}
+
+.sea-and-boy {
+    background-image: url(../pics/summer-of-fun.jpg);
+    background-repeat: no-repeat;
+    height: 329px;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.sea-stuff {
+    padding-top: 61px;
+}
+
+.twenty-fourth-august {
+    margin-right: 364px;
+}
+
+.lifestyle-summer {
+    overflow: hidden;
+    height: 309px;
+}
+
+.lifestyle-icon {
+    margin-right: 27px;
+}
+
+.track-lifestyle {
+    width: 377px;
+    height: 309px;
+    float: left;
+}
+
+.tracking-info {
+    padding-top: 55px;
+    margin-left: 38px;
+    width: 333px;
+}
+
+.tracking-info h1 {
+    margin-bottom: 41px;
+    margin-top: 15px;
+}
+
+.summer-fun {
+    padding-bottom: 123px;
+}
+
+.summer-info {
+    padding-top: 64px;
+    margin-left: 59px;
+}
+
+.summer-info h1 {
+    font-size: 40px;
+    margin-bottom: 33px;
+}
+
+.summer-info p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.grape {
+    float: left;
+    width: 755px;
+}
+
+.involved-eating-habits, .grape-mangos {
+    overflow: hidden;
+    margin-top: -3px;
+}
+
+.get-involved  {
+    padding-left: 38px;
+    width: 717px;
+    padding-bottom: 101px;
+    float: left;
+}
+
+.get-involved-info {
+    padding-top: 56px;
+    margin-bottom: 41px;
+}
+
+.improve-habits {
+    width: 363px;
+    float: right;
+    padding-bottom: 77px;
+    padding-left: 38px;
+    padding-top: 55px;
+}
+
+.habits-icon {
+    padding-right: 34px;
+}
+
+.habits-info {
+    margin-bottom: 40px;
+}
+
+.habits-info h3 {
+    margin-bottom: 13px;
+}
+
+.strawberry {
+    padding: 55px 45px;
+}
+
+               /* Launching part*/
+
+.launching-section {
+    background-image: url(../pics/launch-leaders-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 802px;
+    text-align: center;
+}
+
+.launching-stuff {
+    padding-top: 238px;
+}
+
+.launching-stuff h1 {
+    font-size: 45px;
+    margin-bottom: 36px;
+}
+
+        /* Footer is here*/
+
+footer {
+    background-color: #0D1119;
+}
+
+footer h3 {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: #8297A7;
+}
+
+.footer-stuff {
+    padding-bottom: 427px;
+    margin: 0 auto;
+    width: 1190px;
+    padding-top: 65px;
+}
+
+.resources-column, .about-column, .stay-in-touch {
+    float: left;
+}
+
+.about-column {
+    margin-left: 59px;
+    margin-right: 59px;
+}
+
+.mail-signup {
+    float: right;
+    margin-top: 52px;
+    padding-right: 17px;
+}
+
+.your-name, .your-email {
+    padding-left: 20px;
+}
+
+
+.your-name, .your-email, button {
+    height: 49px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.your-name {
+    width: 180px;
+}
+
+.your-email {
+    width: 319px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+button {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    font-family: ProximaNovaSemiBold;
+    font-size: 15px;
+    background-image: url(../pics/newsletter-circle.png);
+    background-repeat: no-repeat;
+    background-position: 146px;
+}
+
+.facebook {
+    background-color: #2E3192;
+    background-image: url(../pics/facebook.png);
+}
+
+.linkedin {
+    background-color: #171A8F;
+    background-image: url(../pics/linkedin.png);
+}
+
+.youtube {
+    background-color: #ED3123;
+    background-image: url(../pics/youtube.png);
+}
+
+.twitter {
+    background-color: #00AEEF;
+    background-image: url(../pics/twitter.png);
+}
+
+.facebook, .linkedin, .youtube, .twitter {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+}
+
+.twitter {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.youtube {
+    margin-right: 12px;
+}
+
+#showblock {
+    display: none;
+}
+
+
+/* Here comes Medias*/
+
+
+@media(max-device-width: 768px) {
+
+    /*Header*/
+
+    .container, .footer-stuff, .mango img {
+        width: 100%;
+    }
+
+    header {
+        background-size: 100%;
+        background-image: url(../pics/mob768background.jpg);
+        height: 428px;
+    }
+
+    .logo_fitness {
+        padding: 21px 0 0 60px;
+    }
+
+    nav {
+        padding: 29px 0px 0 0;
+    }
+
+    nav a, nav a:last-of-type {
+        margin-right: 19px;
+    }
+    .slogan {
+        padding: 233px 0 0 22px;
+    }
+
+    .fitness-in {
+        font-size: 20px;
+    }
+
+    .you-can {
+        margin-left: 63px;
+        font-size: 13px;
+
+    }
+
+    /*Main part*/
+
+    .info-block {
+        padding-top: 47px;
+    }
+
+    .resources {
+        margin-left: 24px;
+    }
+
+    .resources p {
+        margin-bottom: 10px;
+    }
+
+    .communicate p {
+        margin-bottom: 52px;
+    }
+
+    .training-funding p {
+        margin-bottom: 26px;
+    }
+
+    .connect p {
+        margin-bottom: 11px;
+    }
+
+    .info-block div {
+        padding: 24px;
+        margin: 0;
+    }
+
+
+    /* Gallery part*/
+
+    .gallery-one {
+        padding-top: 33px;
+    }
+
+
+    .fitness-first, .love-your-body {
+        width: 35%;
+    }
+
+    .slim-model, .hand-watch{
+        width: 65%;
+    }
+
+    .slim-model {
+        background-image: url(../pics/fitness-mobile.jpg);
+    }
+
+    .fitness-stuff {
+        padding: 16px 5px 48px 5px
+    }
+
+    .watch-body-part {
+        height: auto;
+    }
+
+    .hand-watch {
+        background-image: url(../pics/watch-mobile.jpg);
+        height: 305px;
+    }
+
+    .drop {
+        margin-top: 14px;
+        margin-bottom: 15px;
+    }
+
+    .hand-watch, .love-your-body {
+        margin-top: -7px;
+    }
+
+    .love-stuff {
+        padding-top: 16px;
+        padding-bottom: 14px;
+    }
+
+    .love-stuff p {
+        padding: 0 5px 0 5px;
+    }
+
+    .love-stuff p br, .tracking-info p br, .summer-info p br, .get-involved p br , .improve-habits p br {
+        display: none;
+    }
+
+    .sea-and-boy, .happy-runners {
+        height: 254px;
+    }
+
+    .runners-sea {
+        height: auto;
+    }
+
+    .sea-and-boy, .summer-fun, .grape, .get-involved {
+        width: 65%;
+    }
+
+    .sea-and-boy {
+        background-image: url(../pics/summer-of-fun-mobile.jpg);
+    }
+
+    .track-lifestyle, .happy-runners, .mango, .improve-habits {
+        width: 35%;
+    }
+
+    .happy-runners {
+        background-image: url(../pics/lifestyle-runing-mobile.jpg);
+    }
+
+    .tracking-info {
+        padding-top: 55px;
+        margin-left: 13px;
+        width: auto;
+    }
+
+     .summer-info {
+        padding-top: 83px;
+        margin-left: 29px;
+    }
+
+    .grape img {
+        width: 105%;
+    }
+
+    .get-involved, .improve-habits {
+        padding-left: 0;
+    }
+
+    .habits-info, .improve-habits p, .get-involved-info, .get-involved p {
+        padding-left: 10px;
+    }
+
+    /*Launching part*/
+
+    .launching-section {
+        background-image: url(../pics/launch-leaders-background-mobile.jpg);
+        height: 494px;
+    }
+
+    .launching-stuff {
+        padding-top: 195px;
+    }
+
+    /*Footer*/
+
+    .footer-stuff {
+        text-align: center;
+        padding-bottom: 260px;
+    }
+
+    .about-column {
+        margin-top: 50px;
+    }
+
+    .resources-column, .about-column {
+        float: none;
+    }
+
+    .stay-in-touch {
+        margin-top: 50px;
+        float: none;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .stay-in-touch a {
+        float: none;
+    }
+
+}
+
+@media (max-device-width: 667px) {
+
+    /* header part */
+
+    header {
+        height: 371px;
+    }
+
+    .slogan {
+        padding: 177px 0 0 22px;
+    }
+
+    /* Main Content */
+
+    .connect p {
+        margin-bottom: 11px;
+    }
+
+    .info-block {
+        display: block;
+        text-align: center;
+    }
+
+    .info-block > div {
+        display: inline-block;
+    }
+
+    .communicate p {
+        margin-bottom: 26px;
+    }
+
+    /* Gallery*/
+
+    .fitness-stuff {
+        padding: 50px 5px 63px 5px;
+    }
+
+    .fitness-stuff p br {
+        display: none;
+    }
+
+    .fitness-stuff h1, .love-stuff h1, .tracking-info h1, .get-involved-info h1, .habits-info h1 {
+        font-size: 23px;
+    }
+
+    .drop {
+        margin-bottom: 3px;
+    }
+
+    .sea-stuff {
+        padding-top: 40px;
+    }
+
+    .twenty-fourth-august {
+        margin-right: 142px;
+    }
+
+    .tracking-info p {
+        margin-right: 5px;
+    }
+
+    .tracking-info h1 {
+        margin-bottom: 30px;
+    }
+
+    .lifestyle-icon {
+        margin-right: 13px;
+    }
+
+    .summer-info h1 {
+        font-size: 33px;
+    }
+
+    .improve-habits {
+        padding-bottom: 30px;
+    }
+
+    .get-involved {
+        padding-bottom: 54px;
+    }
+
+    /*Launching section*/
+
+    .launching-stuff h1 {
+        font-size: 35px
+    }
+
+    .launching-stuff {
+        padding-top: 156px;
+    }
+
+    /* Footer */
+
+    .your-name {
+        width: 150px;
+    }
+
+    .your-email {
+        width: 245px;
+    }
+
+    .footer-stuff button {
+        width: 175px;
+    }
+
+}
+@media (max-device-width: 568px) {
+
+    /*Header and Menu*/
+
+    header {
+        height: 316px;
+    }
+
+    .logo_fitness {
+        padding: 21px 0 0 24px;
+    }
+
+    nav {
+        padding: 26px 0 0 0;
+    }
+
+    nav a, nav a:last-of-type {
+        margin-right: 10px;
+    }
+
+    .slogan {
+        padding: 149px 0 0 15px;
+    }
+
+    /* Main Content */
+
+    .info-block {
+        display: block;
+        padding-top: 9px;
+        text-align: center;
+    }
+
+    .info-block p {
+        margin-bottom: 31px;
+    }
+
+    .info-block .training-funding, .info-block .connect, .info-block .communicate {
+        margin-top: 21px;
+    }
+
+    /*Gallery*/
+
+    .fitness-stuff {
+        padding: 50px 5px 45px 5px;
+    }
+
+    .improve-habits {
+        padding-bottom: 153px;
+    }
+
+    .hand-watch {
+        background-image: url(../pics/watch480.jpg);
+        height: 243px;
+    }
+
+    .love-stuff {
+        padding-top: 8px;
+        padding-bottom: 11px;
+    }
+
+    .love-stuff p {
+        line-height: 21px;
+        padding: 0;
+    }
+
+    .love-stuff h3 {
+        margin-bottom: 3px;
+    }
+
+    .love-your-body .drop {
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+
+    .twenty-fourth-august {
+        margin-right: 120px;
+    }
+
+    .tracking-info h1 {
+        margin-bottom: 12px;
+    }
+
+    .summer-info {
+        margin-left: 20px;
+    }
+
+    .improve-habits {
+        padding-bottom: 30px;
+    }
+
+    .habits-icon {
+        padding-right: 19px;
+    }
+
+    /*Launching part and Footer*/
+
+    .launching-section {
+        background-size: 100%;
+        height: 284px;
+    }
+
+    .launching-stuff {
+        padding-top: 88px;
+    }
+
+    .launching-stuff h1 {
+        font-size: 25px;
+    }
+
+    .footer-stuff button {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-device-width: 480px) {
+
+    /*Header*/
+
+    header {
+        height: 266px;
+    }
+
+    .logo_fitness {
+        padding: 11px 0 0 13px;
+    }
+
+    .logo_fitness img {
+        width: 135px
+    }
+
+    .slogan {
+        padding: 184px 0 0 15px;
+    }
+
+    .fitness-in {
+        line-height: 29px;
+        font-size: 16px;
+    }
+
+    .you-can {
+        font-size: 11px;
+        margin-left: 45px;
+    }
+
+    /*Menu*/
+
+    nav a:after {
+        content:"\a";
+        white-space: pre;
+    }
+
+    label {
+        cursor: pointer;
+        float: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    .nav-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #fff;
+        margin-bottom: 3px;
+    }
+
+    nav {
+        margin-left: 17px;
+        float: none;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        float: none;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+    #showblock {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 0;
+
+    }
+
+    #showblock:checked + .logo-menu {
+        height: auto;
+        display: block;
+    }
+
+    .logo-menu {
+        background: #0D1119;
+        overflow: hidden;
+        -webkit-transition: height 300ms linear;
+        -moz-transition: height 300ms linear;
+        -o-transition: height 300ms linear;
+        transition: height 300ms linear;
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+
+    /*Gallery*/
+
+    .love-stuff p {
+        padding: 0 10px 16px 10px;
+    }
+
+    .hand-watch, .slim-model{
+        background-size: cover;
+    }
+
+    .slim-model {
+        background-image: url(../pics/fitness-mobile480.jpg);
+    }
+
+    .fitness-first, .hand-watch, .slim-model, .love-your-body, .happy-runners, .sea-and-boy, .track-lifestyle, .grape, .mango, .summer-fun, .get-involved, .improve-habits  {
+        width: 100%;
+    }
+
+    .happy-runners {
+        background-size: cover;
+        height: 391px;
+        background-image: url(../pics/lifestyle-runing.jpg);
+    }
+
+    .fitness-first, .love-your-body, .track-lifestyle, .mango, .grape {
+        float: none;
+    }
+
+    .track-lifestyle {
+        height: auto;
+    }
+
+    .tracking-info {
+        padding-bottom: 10px;
+    }
+
+    .love-your-body {
+        overflow: hidden;
+    }
+
+    .love-stuff {
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
+
+    .watch-body-part {
+        height: auto;
+    }
+
+    .lifestyle-summer {
+        height: auto;
+    }
+
+    .summer-fun {
+        padding-bottom: 65px;
+    }
+
+    .summer-info {
+        padding-top: 50px;
+    }
+
+    .grape {
+        height: 214px;
+    }
+
+    .launching-section {
+        height: 240px;
+    }
+
+    .launching-stuff {
+        padding-top: 75px;
+    }
+
+    /* Footer*/
+
+    .footer-stuff {
+        padding-bottom: 297px;
+        text-align: center;
+    }
+
+    .footer-stuff p {
+        text-align: center;
+    }
+
+   .resources-column, .about-column, .stay-in-touch {
+        float: none;
+    }
+
+   .about-column {
+       margin-top: 25px;
+   }
+
+    .about-column, .resources-column  {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mail-signup {
+        padding-right: 0;
+    }
+
+}
+
+
+@media (max-device-width: 414px) {
+
+    header {
+        height: 230px;
+    }
+
+    .slogan {
+        padding: 165px 0 0 15px;
+    }
+
+    .grape {
+        height: 185px;
+    }
+
+    .launching-section {
+        height: 207px;
+    }
+
+    .launching-stuff {
+        padding-top: 43px;
+    }
+
+    .launching-stuff h1 {
+        margin-bottom: 24px;
+    }
+
+    .launching-stuff p br, .about-column p br {
+        display: none;
+    }
+
+    .your-email {
+        width: 191px;
+    }
+
+}
+
+
+@media (max-device-width: 320px) {
+
+    header {
+        height: 178px;
+    }
+
+    .slogan {
+        padding: 114px 0 0 15px;
+    }
+
+    .fitness-in {
+        font-size: 14px;
+    }
+
+    .you-can {
+        font-size: 10px;
+        margin-left: 36px;
+    }
+
+    /*Gallery*/
+
+    .summer-fun .summer-info {
+        padding-top: 26px;
+    }
+
+    .summer-info h1 {
+        font-size: 35px;
+    }
+
+    .slim-model {
+        background-image: url(../pics/fitness-first320.jpg);
+        height: 163px;
+    }
+
+    .model-info {
+        right: 17px;
+    }
+
+    .model-info, .watch-info {
+        position: absolute;
+        bottom: 28px;
+        font-size: 11px;
+    }
+
+    .happy-runners {
+        background-size: auto;
+        height: 331px;
+    }
+
+    .sea-and-boy {
+        background-size: 100%;
+        height: 134px
+    }
+
+    .twenty-fourth-august {
+        margin-right: 73px;
+    }
+
+    .grape img {
+        width: 100%;
+    }
+
+    .grape {
+        height: 136px;
+    }
+
+    /* Launching part*/
+
+    .launching-section {
+        height: 160px;
+    }
+
+    .launching-stuff {
+        padding-top: 20px;
+    }
+
+    .launching-stuff h1 {
+        font-size: 22px;
+    }
+
+    .launching-stuff p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    /*Footer*/
+
+    .resources-column p br {
+        display: none;
+    }
+
+    .your-name {
+        margin-bottom: 10px;
+    }
+
+    .your-email {
+        width: 150px;
+    }
+
+    .footer-stuff button {
+        width: 171px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
